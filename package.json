@@ -1,0 +1,47 @@
+{
+  "name": "instagram-min",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions@0.0.3",
+    "dev": "nodemon --exec babel-node server --delay 1",
+    "migrate": "npx prisma migrate dev --preview-feature",
+    "studio": "npx prisma studio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keyleeu/instagram-min2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keyleeu/instagram-min2/issues"
+  },
+  "homepage": "https://github.com/keyleeu/instagram-min2#readme",
+  "dependencies": {
+    "@prisma/client": "^3.6.0",
+    "apollo-server": "^2.25.2",
+    "apollo-server-express": "^2.19.2",
+    "bcrypt": "^5.0.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.4.0",
+    "graphql-tools": "^7.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@prisma/cli": "^2.14.0",
+    "nodemon": "^2.0.7",
+    "prisma": "^3.6.0"
+  },
+  "resolutions": {
+    "fs-capacitor": "^6.2.0",
+    "graphql-upload": "^11.0.0"
+  }
+}
