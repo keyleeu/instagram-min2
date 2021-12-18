@@ -11,6 +11,7 @@ export default gql`
     hashtags: [Hashtag]
     createdAt: String!
     updatedAt: String!
+    isMine: Boolean!
   }
   type Hashtag {
     id: Int!
@@ -19,7 +20,6 @@ export default gql`
     totalPhotos: Int!
     createdAt: String!
     updatedAt: String!
-    isMine: Boolean!
   }
   type Like {
     id: Int!
